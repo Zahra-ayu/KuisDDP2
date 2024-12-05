@@ -61,6 +61,42 @@ int main() {
     double hasil = 0.0;
     char input = '\n';
     bool konversi = 0;
+    while(input != '.') {
+        if(konversi == 1) {
+            tampilan_output(hasil);
+            cout<<"Masukkan Operator : ";
+            cin>>input;
+            if(input == '+' || input == '-' || input == '*' || input == '/' || input == 'm' || input == 'p') {
+                angka1 = hasil;
+                cout<<"Masukkan Angka 2 : ";
+                cin>>angka2;
+            } else if(input == 'C' || input == '.') {
+
+            } else {
+                angka1 = hasil;
+            }
+        } else {
+            tampilan_kalkulator();
+            cout<<"Masukkan Operator : ";
+            cin>>input;
+            if(input == '+' || input == '-' || input == '*' || input == '/' || input == 'm' || input == 'p') {
+                cout<<"Masukkan angka 1 : ";
+                cin>> angka1;
+
+                cout<<"Masukkan angka 2 : ";
+                cin>>angka2;
+            } else if(input == 'C' || input == '.') {
+
+            } else {
+                cout<<"Masukkan angka 1: ";
+                cin>>angka1;
+            }
+
+            konversi = 1;
+
+        }
+
+
   
     return 0;
 }
