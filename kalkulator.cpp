@@ -95,8 +95,59 @@ int main() {
             konversi = 1;
 
         }
+        
+switch(input) {
+        case '+':
+            hasil = angka1 + angka2;
+            break;
+        case '-':
+            hasil = angka1 - angka2;
+            break;
+        case '*':
+            hasil = angka1 * angka2;
+            break;
+        case '/':
+            hasil = angka1 / angka2;
+            break;
+        case 'm':
+            hasil =   int(angka1)  % int(angka2);
+            break;
+        case 'L':
+            hasil = log(angka1);
+            break;
+        case 'S':
+            hasil = angka1*angka1;
+            break;
+        case 'K':
+            hasil = angka1*angka1*angka1;
+            break;
+        case 'p':
+            hasil = pow(angka1,angka2);
+            break;
+        case 's':
+            hasil = sin((angka1*3.141)/180);
+            break;
+        case 'c':
+            hasil = cos((angka1*3.141)/180);
+            break;
+        case 't':
+            hasil = tan((angka1*3.141)/180);
+            break;
+        case 'r':
+            hasil = sqrt(angka1);
+            break;
+        case 'C':
+            konversi = 0;
+            break;
+        case '.':
+            break;
+        default:
+            cout<<"----Masukkan Yang Lain!---- "<<endl;
+        }
 
+        system("cls");
 
-  
+    }
+    
     return 0;
 }
